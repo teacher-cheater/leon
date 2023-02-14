@@ -1,0 +1,59 @@
+.circle {
+  display: flex;
+  width: 835px;
+  height: 835px;
+  //flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  background: url("../img/bg_well_1x.png") center / contain no-repeat;
+  position: relative;
+  @media (max-width: 1023.98px) {
+  }
+  @media (max-width: 543.98px) {
+    width: 402px;
+    height: 402px;
+  }
+  // .circle__content
+  &__content {
+    width: 642px;
+    height: 642px;
+    align-self: center;
+    align-items: center;
+    background: url("../img/innercircle_1x.png") center / contain no-repeat;
+    position: absolute;
+    top: 46%;
+    transform: translateY(-50%);
+    z-index: 2;
+    @media (max-width: 1023.98px) {
+    }
+    @media (max-width: 543.98px) {
+      width: 309px;
+      height: 309px;
+    }
+  }
+
+  // .circle__button
+
+  &__button {
+  }
+
+  // .circle__block-choice
+
+  &__block-choice {
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%);
+  }
+
+  // .circle__btn
+
+  &__btn {
+    background: transparent;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}

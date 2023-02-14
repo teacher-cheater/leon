@@ -1,3 +1,159 @@
+@charset "UTF-8";
+/*------------------- Обнуление стилей---------------------------------*/
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
 
+li {
+  list-style: none;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+img {
+  vertical-align: top;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: "Uni Sans Heavy";
+  font-style: italic;
+  font-weight: 900;
+}
+
+html {
+  /* по умолчанию */
+  font-size: 24px;
+}
+
+.main {
+  background: url("../img/bg_main.jpg") center/cover no-repeat;
+  height: 100vh;
+}
+.main__container {
+  max-width: 1740px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.main__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 30px 0 0 0;
+}
+.main__image {
+  margin-bottom: 30px;
+}
+.main__subtitle {
+  font-size: 32px;
+  line-height: 0.85;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+@media (max-width: 767.98px) {
+  .main__subtitle {
+    font-size: 24px;
+  }
+}
+.main__text {
+  margin: 0 auto;
+}
+.main__text {
+  font-size: 40px;
+  line-height: 1.2;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #ffffff;
+  background: #c6217d;
+  transform: skew(-12deg);
+  padding: 12px 20px;
+  max-width: 545px;
+}
+@media (max-width: 767.98px) {
+  .main__text {
+    font-size: 26px;
+    padding: 7px 20px;
+  }
+}
+
+@font-face {
+  font-family: "Uni Sans Heavy";
+  src: url("UniSansHeavyItalic.eot");
+  src: local("Uni Sans Heavy Italic"), local("UniSansHeavyItalic"), url("UniSansHeavyItalic.eot?#iefix") format("embedded-opentype"), url("UniSansHeavyItalic.woff") format("woff"), url("UniSansHeavyItalic.ttf") format("truetype");
+  font-weight: 900;
+  font-style: italic;
+}
+.circle {
+  display: flex;
+  width: 835px;
+  height: 835px;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  background: url("../img/bg_well_1x.png") center/contain no-repeat;
+  position: relative;
+}
+@media (max-width: 543.98px) {
+  .circle {
+    width: 402px;
+    height: 402px;
+  }
+}
+.circle__content {
+  width: 642px;
+  height: 642px;
+  align-self: center;
+  align-items: center;
+  background: url("../img/innercircle_1x.png") center/contain no-repeat;
+  position: absolute;
+  top: 46%;
+  transform: translateY(-50%);
+  z-index: 2;
+}
+@media (max-width: 543.98px) {
+  .circle__content {
+    width: 309px;
+    height: 309px;
+  }
+}
+.circle__block-choice {
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%);
+}
+.circle__btn {
+  background: transparent;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 
 /*# sourceMappingURL=style.css.map */

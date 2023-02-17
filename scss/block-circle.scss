@@ -50,6 +50,7 @@
     top: 63px;
     left: 50%;
     transform: translate(-50%);
+    z-index: 1;
     @media (max-width: 767.98px) {
       top: 33px;
       left: 49.5%;
@@ -83,6 +84,8 @@
     left: 50%;
     max-width: 250px;
     transform: translate(-50%);
+    z-index: 2;
+
     @media (max-width: 767.98px) {
       display: none;
     }
@@ -98,6 +101,7 @@
       top: 34px;
       left: 49.5%;
       transform: translate(-50%);
+      z-index: 2;
     }
   }
 

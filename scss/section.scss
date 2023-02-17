@@ -1,16 +1,14 @@
 .section {
   max-width: 1920px;
-  background-color: teal;
   margin: 0 auto;
   position: relative;
-  background: url("../img/bg_main.jpg") 100% / cover no-repeat;
+  height: 100vh;
+  background: url("../img/bg_main.jpg") 0 0 / cover no-repeat;
   @media (max-width: 767.98px) {
     background: url("../img/bg_main.jpg") 65% / cover no-repeat;
-    height: 100vh;
   }
   @media (min-width: 1921px) {
     max-width: 9920px;
-    height: 100vh;
   }
 
   // .section__container

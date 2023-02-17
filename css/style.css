@@ -58,21 +58,19 @@ html {
 }
 .section {
   max-width: 1920px;
-  background-color: teal;
   margin: 0 auto;
   position: relative;
-  background: url("../img/bg_main.jpg") 100%/cover no-repeat;
+  height: 100vh;
+  background: url("../img/bg_main.jpg") 0 0/cover no-repeat;
 }
 @media (max-width: 767.98px) {
   .section {
     background: url("../img/bg_main.jpg") 65%/cover no-repeat;
-    height: 100vh;
   }
 }
 @media (min-width: 1921px) {
   .section {
     max-width: 9920px;
-    height: 100vh;
   }
 }
 .section__container {
@@ -216,7 +214,7 @@ html {
   max-width: 100px;
   max-height: 100px;
   position: absolute;
-  top: 35%;
+  top: 54%;
   left: 10px;
 }
 @media (max-width: 767.98px) {
@@ -480,6 +478,7 @@ html {
   top: 63px;
   left: 50%;
   transform: translate(-50%);
+  z-index: 1;
 }
 @media (max-width: 767.98px) {
   .block-circle__wheel {
@@ -514,6 +513,7 @@ html {
   left: 50%;
   max-width: 250px;
   transform: translate(-50%);
+  z-index: 2;
 }
 @media (max-width: 767.98px) {
   .block-circle__img {
@@ -531,6 +531,7 @@ html {
     top: 34px;
     left: 49.5%;
     transform: translate(-50%);
+    z-index: 2;
   }
 }
 .block-circle__btn {

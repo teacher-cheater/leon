@@ -76,6 +76,7 @@
 
   // .block-leon__texts
   &__texts {
+    padding: 0 15px;
   }
 
   // .block-leon__text
@@ -197,6 +198,7 @@
     position: absolute;
     top: 60px;
     left: 50%;
+    max-width: 250px;
     transform: translate(-50%);
     @media (max-width: 767.98px) {
       display: none;
@@ -210,6 +212,7 @@
     @media (max-width: 767.98px) {
       display: block;
       position: absolute;
+      max-width: 116px;
       top: 34px;
       left: 49.5%;
       transform: translate(-50%);
@@ -392,4 +395,9 @@
       height: 110px;
     }
   }
+}
+
+.active {
+  transform: rotate(360deg);
+  transition: all 2s ease 0s;
 }

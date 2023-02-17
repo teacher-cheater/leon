@@ -352,6 +352,9 @@ html {
     font-size: 24px;
   }
 }
+.block-leon__texts {
+  padding: 0 15px;
+}
 .block-leon__text {
   display: flex;
   margin: 0 auto;
@@ -439,6 +442,7 @@ html {
   position: absolute;
   top: 60px;
   left: 50%;
+  max-width: 250px;
   transform: translate(-50%);
 }
 @media (max-width: 767.98px) {
@@ -453,6 +457,7 @@ html {
   .block-circle__img-mobile {
     display: block;
     position: absolute;
+    max-width: 116px;
     top: 34px;
     left: 49.5%;
     transform: translate(-50%);
@@ -627,6 +632,59 @@ html {
     width: 110px;
     height: 110px;
   }
+}
+
+.active {
+  transform: rotate(360deg);
+  transition: all 2s ease 0s;
+}
+
+.popup,
+.popup-lost {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 220;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s ease 0s;
+}
+.popup__body,
+.popup-lost__body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+.popup__content,
+.popup-lost__content {
+  position: relative;
+}
+@media (max-width: 767.98px) {
+  .popup__content img,
+  .popup-lost__content img {
+    width: 400px;
+    height: 483px;
+  }
+}
+.popup__close,
+.popup-lost__close {
+  position: absolute;
+  right: 10px;
+  text-decoration: none;
+}
+
+.popup.open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.popup-lost.open {
+  opacity: 1;
+  visibility: visible;
 }
 
 /*# sourceMappingURL=style.css.map */

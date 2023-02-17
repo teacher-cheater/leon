@@ -75,7 +75,9 @@
               </h1>
               <h2 class="block-leon__subtitle">Gira la rueda y gana</h2>
               <div class="block-leon__texts">
-                <p class="block-leon__text">fantásticos premios</p>
+                <a class="block-leon__text open-popup-lost" href="#popup-lost"
+                  >fantásticos premios</a
+                >
               </div>
             </div>
           </div>
@@ -103,12 +105,12 @@
                       <img
                         src="img/innercircle_1x.png"
                         alt="circle like"
-                        class="block-circle__wheel-like"
+                        class="block-circle__wheel-like wheel-like"
                       />
                       <img
                         src="img/innercircle-mob.png"
                         alt="circle like"
-                        class="block-circle__wheel-like-mob"
+                        class="block-circle__wheel-like-mob wheel-like"
                       />
                     </div>
                     <!--  -->
@@ -122,7 +124,10 @@
                       src="img/plashka_mobile.png"
                       alt="choice"
                     />
-                    <button class="block-circle__btn">
+                    <a
+                      href="#popup"
+                      class="block-circle__btn popup-link open-popup-win"
+                    >
                       <img
                         class="block-circle__img-btn"
                         src="img/button.png"
@@ -133,7 +138,7 @@
                         src="img/button_mobile.png"
                         alt="btn arrow"
                       />
-                    </button>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -183,6 +188,26 @@
         </div>
       </div>
     </section>
+    <!-- pop up -->
+    <div id="popup" class="popup">
+      <div class="popup__body">
+        <div class="popup__content">
+          <img src="img/popup-win.png" alt="win" />
+          <a href="#header" class="popup__close close-popup"></a>
+        </div>
+      </div>
+    </div>
+    <!--  -->
+    <!-- pop up -->
+    <!--<div id="popup-lost" class="popup-lost">
+      <div class="popup__body-lost">
+        <div class="popup__content">
+          <img src="img/popup-lost.png" alt="lost" />
+          <a href="#header" class="popup__close close-popup"></a>
+        </div>
+      </div>
+    </div>-->
+    <!--  -->
     <script src="./app.js"></script>
   </body>
 </html>

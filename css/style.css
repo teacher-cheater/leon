@@ -63,21 +63,14 @@ html {
   height: 100vh;
   background: url("../img/bg_main.jpg") 100%/cover no-repeat;
 }
-@media (max-width: 1600px) {
-  .section {
-    height: 100vh;
-  }
-}
 @media (max-width: 767.98px) {
   .section {
     background: url("../img/bg_main.jpg") 65%/cover no-repeat;
-    height: 100vh;
   }
 }
 @media (min-width: 1921px) {
   .section {
     max-width: 9920px;
-    height: 110vh;
   }
 }
 .section__container {

@@ -1,13 +1,13 @@
 const popupBg = document.querySelector('.popup__body');
 const popup = document.querySelector('.popup'); //окно
 const closePopupButton = document.querySelector('.close-popup'); //Кнопка closed.
-const styleWheel = document.querySelector(".wheel-like")
+const styleWheel = document.querySelectorAll(".wheel-like")
 const btnCircleActive = document.querySelector('.block-circle__btn')
 
 btnCircleActive.addEventListener('click', () => {
-  styleWheel.classList.add('active')
+  styleWheel.forEach((elem) => elem.classList.add('active'))
   setTimeout(() => {
-    styleWheel.classList.remove('active')
+    styleWheel.forEach((elem) => elem.classList.remove('active'))
     showPopup()
   }, 2900)
 })

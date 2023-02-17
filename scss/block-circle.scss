@@ -1,0 +1,142 @@
+.block-circle {
+  // .block-circle__wrapper
+  &__wrapper {
+  }
+
+  // .block-circle__content
+  &__content {
+  }
+
+  // .block-circle__button
+  &__button {
+  }
+
+  // .block-circle__block-choice
+  &__block-choice {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+
+  // .block-circle__bg-img
+  &__bg-img {
+  }
+
+  // .block-circle__bg
+  &__bg {
+    @media (max-width: 1023.98px) {
+      max-width: 775px;
+      max-height: 770px;
+    }
+    @media (max-width: 767.98px) {
+      display: none;
+    }
+  }
+
+  &__bg-mob {
+    display: none;
+    @media (max-width: 767.98px) {
+      overflow: hidden;
+      display: block;
+      max-width: 400px;
+      max-height: 375px;
+    }
+  }
+
+  // .block-circle__wheel
+  &__wheel {
+    position: absolute;
+    top: 63px;
+    left: 50%;
+    transform: translate(-50%);
+    @media (max-width: 767.98px) {
+      top: 33px;
+      left: 49.5%;
+    }
+  }
+
+  // .block-circle__wheel-like
+  &__wheel-like {
+    @media (max-width: 1023.98px) {
+      max-width: 600px;
+      max-height: 600px;
+    }
+    @media (max-width: 767.98px) {
+      display: none;
+    }
+  }
+
+  &__wheel-like-mob {
+    display: none;
+    @media (max-width: 767.98px) {
+      display: block;
+      max-width: 300px;
+      max-height: 290px;
+    }
+  }
+
+  // .block-circle__img
+  &__img {
+    position: absolute;
+    top: 60px;
+    left: 50%;
+    max-width: 250px;
+    transform: translate(-50%);
+    @media (max-width: 767.98px) {
+      display: none;
+    }
+  }
+
+  // .block-circle__img-mobile
+  &__img-mobile {
+    display: none;
+    @media (max-width: 767.98px) {
+      display: block;
+      position: absolute;
+      max-width: 116px;
+      top: 34px;
+      left: 49.5%;
+      transform: translate(-50%);
+    }
+  }
+
+  // .block-circle__btn
+  &__btn {
+    background: transparent;
+    position: absolute;
+    top: 46%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    transition: all 0.3s ease-in 0s;
+    &:hover img {
+      transition: all 0.2s ease-in 0s;
+      transform: scale(1.05);
+    }
+    z-index: 11;
+    @media (max-width: 1023.98px) {
+      top: 47%;
+    }
+  }
+
+  // .block-circle__img-btn
+  &__img-btn {
+    background: transparent;
+    @media (max-width: 767.98px) {
+      display: none;
+    }
+  }
+
+  // .block-circle__img-btn-mobile
+  &__img-btn-mobile {
+    display: none;
+    background: transparent;
+    @media (max-width: 767.98px) {
+      display: block;
+      position: absolute;
+      top: -31px;
+      left: -36px;
+    }
+  }
+}

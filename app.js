@@ -32,5 +32,23 @@ document.addEventListener('click', (e) => {
   }
 });
 
-
-
+//библиотека, движение за мышью
+window.addEventListener('DOMContentLoaded', () => {
+  VANTA.BIRDS({
+    el: "#vanta",
+    mouseControls: true,
+    touchControls: true,
+    gyroControls: true,
+    minHeight: 200.00,
+    minWidth: 200.00,
+    scale: 5.00,
+    scaleMobile: 1.00,
+    birdSize: 0.50,
+    wingSpan: 25.00,
+    separation: 100.00,
+    alignment: 100.00,
+    cohesion: 100.00,
+    quantity: 3.50,
+    backgroundAlpha: 0.00
+  })
+})

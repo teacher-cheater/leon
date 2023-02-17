@@ -204,6 +204,7 @@ html {
     position: absolute;
     left: 0;
     bottom: 0;
+    z-index: 4;
   }
 }
 @media (max-width: 767.98px) {
